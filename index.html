@@ -71,7 +71,214 @@ div#header-title .blog_img {
     color:#666;
     font-size:120%;
     font-weight: bold;
-  }  </style>
+  }  
+/* コンテンツ */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style:none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  
+}
+
+@media only screen and (min-width: 320px) {
+  .tempo, .tel {
+    padding: 7px 0px 7px 0px;
+    margin-left:0px;
+    min-width:180px;
+    border:none;
+    border-bottom:1px solid #cfcfcf;
+    }
+  .no-visible {
+    display: none;
+  } 
+}
+
+@media only screen and (min-width: 768px) {
+  .tempo, .tel{
+    padding: 8px 0 8px 0px;
+    margin-left:0px;
+    min-width:170px;
+    border-bottom:1px solid #cfcfcf;
+    }
+  .no-visible {
+    display: inline-block;
+  } 
+}
+@media only screen and (min-width: 1170px) {
+  .tempo, .tel {
+    flex:1;
+    padding: 7px 0px 7px 0px;
+    max-width:250px;
+    border-bottom:1px solid #cfcfcf;
+  }
+  .no-visible {
+    display: inline;
+  }
+}
+
+.hanbai_chiku_title {
+  padding: 5px 15px 5px 15px;
+  list-style:none;
+  border-left:4px solid #ccc;
+  background-color:#eeefef;
+  color:#666;
+  font-size:120%;
+  font-weight: bold;
+}
+
+/* sidebar */
+
+.module{
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  font-size: 100%;
+}
+
+.top-module-list-home {
+  margin: 1px 7px 0px 0;
+  padding: 5px 0 3px 12px;
+  list-style:none;
+  color:#666;
+  font-weight: bold;
+}
+
+.top-module-list {
+  margin: 1px 7px 1px 0;
+  padding: 5px 0 3px 12px;
+  list-style:none;
+  border-left:4px solid #ccc;
+  background-color:#eeefef;
+  color:#666;
+  font-weight: bold;
+}
+.top-module-list-hover {
+  margin: 1px 7px 1px 0;
+  padding: 5px 0 3px 12px;
+  list-style:none;
+  border-left:4px solid #ccc;
+  background-color:#ffffff;
+  color:#666;
+  font-weight: bold;
+}
+.top-module-list-furu {
+  font-size: 110%;
+  margin: 1px 7px 2px 0;
+  padding: 5px 0 4px 12px;
+  list-style:none;
+  border-left:4px solid #74C4AE;
+  background-color:#eeefef;
+  color:#666;
+  font-weight: bold;
+}
+.top-module-list-w {
+  margin: 1px 7px 1px 0;
+  padding: 5px 0 3px 12px;
+  list-style:none;
+  border-left:4px solid #fff;
+  background-color:#fff;
+  color:#8f8f8f;
+}
+.top-module-list-home a:link, .top-module-list-home a:visited {
+  color:#36414d;
+  font-weight: bold;
+}
+.top-module-list a:link{
+  color:#36414d;
+  font-weight: bold;
+}
+
+.top-module-list a:visited {
+  color:#36414d;
+  font-weight: bold;
+}
+.top-module-list-w a:link {
+  color:#183390;
+  font-weight: bold;
+}
+.top-module-list-w a:visited {
+  color:#183390;
+  font-weight: bold;
+}
+/*////////// イメージナビ //////////*/
+#navImage {
+  padding-top:7px;
+  padding-left: 11px;
+}
+#navImage_after {
+  padding-top:12px;
+  padding-left:11px;
+}
+#navImage_after img, #navImage_after a:link img, #navImage_after a:visited img {
+  padding-top:12px;
+  padding-left:2px;
+}
+#navImage img {
+  padding-top:8px;
+  padding-bottom:3px;
+}
+
+#navImage .web_joshufu img {
+  padding-top:5px;
+  padding-bottom:9px;
+}
+
+/*//////////　Form elements　//////////*/
+textarea{
+  width:430px;
+  height:200px;
+  border:1px solid #bcbcbc;
+  background-color:#fff;
+  }
+input{
+  width:169px;
+  height:22px;
+  margin-bottom:7px;
+  border:1px solid #bcbcbc;
+  background-color:#fff;
+  }
+input #button{
+  width:130px;
+  height:22px;
+  background-color: #ccc;
+}
+#submit,#searchsubmit{
+  width:220px;
+  padding-top:10px;
+  padding-left:10px;
+  padding-bottom:5px;
+  border:1px solid #bcbcbc;
+  background-color:#999;
+  }
+#searchform {
+  margin-top:15px;
+  margin-left:3px;
+  margin-right:3px;
+  padding-top:10px;
+    padding-left:6px;
+  padding-bottom:5px;
+  background:#f8f8f8;
+  border: 1px solid #d0d0d0;
+  -moz-border-radius:2px;/*firefox*/
+  -webkit-border-radius:2px;/*Safari and Chrome*/
+  border-radius:2px;/*Opera, IE9, future-proofing*/
+    }
+  .button {
+    width:130px;
+    background-color:#cccccc;
+    height:24px;
+  }
+  </style>
+
+<link rel="stylesheet" href="css/flexbox.css">
 
 </head>
 <body>
@@ -90,5 +297,518 @@ div#header-title .blog_img {
 
 </div><!--header-title-->
 </header>
+
+<!--コンテンツ-->
+<div class="flexbox">
+<section class="main">
+ <h1>Contents </h1> 
+ <div class="hanbai_chiku_title">
+県央
+</div>
+<ul class="flex-container">
+  <li class="tempo">店名</li>
+  <li class="tel">電話</li>
+  <li class="tempo no-visible">店名</li>
+  <li class="tel no-visible">電話</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">前橋・大西</li>
+  <li class="tel">027-221-5538</li>
+  <li class="tempo">前橋・岡野</li>
+  <li class="tel">027-232-6819</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">前橋・北爪</li>
+  <li class="tel">027-288-4211</li>
+  <li class="tempo">前橋・野口</li>
+  <li class="tel">027-263-0970</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">前橋・佐藤</li>
+  <li class="tel">027-231-5274</li>
+  <li class="tempo">前橋・狩野</li>
+  <li class="tel">027-219-0352</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">前橋・山口</li>
+  <li class="tel">027-233-6701</li>
+  <li class="tempo">前橋・前田</li>
+  <li class="tel">027-235-6600</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">前橋・松本</li>
+  <li class="tel">027-265-6280</li>
+  <li class="tempo">前橋・有友</li>
+  <li class="tel">027-230-5501</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">新前橋・小林</li>
+  <li class="tel">027-253-2415</li>
+  <li class="tempo">新前橋・井口</li>
+  <li class="tel">027-252-5678</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">新前橋・前田</li>
+  <li class="tel">027-251-1077</li>
+  <li class="tempo">元総社・川島</li>
+  <li class="tel">027-253-2883</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">元総社・小林</li>
+  <li class="tel">027-253-6721</li>
+  <li class="tempo">元総社・前田</li>
+  <li class="tel">027-251-7663</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">総社・山田</li>
+  <li class="tel">027-251-7241</li>
+  <li class="tempo">総社・田部井</li>
+  <li class="tel">027-251-3464</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">駒形・佐藤</li>
+  <li class="tel">027-266-3337</li>
+  <li class="tempo">駒形・根岸</li>
+  <li class="tel">027-266-1307</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">大胡・藤井</li>
+  <li class="tel">027-283-3824</li>
+  <li class="tempo">大胡・大崎</li>
+  <li class="tel">027-283-2160</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">玉村・余湖</li>
+  <li class="tel">027-065-8139</li>
+  <li class="tempo">玉村・森</li>
+  <li class="tel">027-065-8573</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">玉村・中村</li>
+  <li class="tel">027-064-3300</li>
+  <li class="tempo">高崎・宮川</li>
+  <li class="tel">027-322-6401</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">高崎・武</li>
+  <li class="tel">027-322-5590</li>
+  <li class="tempo">高崎・武南部</li>
+  <li class="tel">027-322-0722</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">高崎・橋本</li>
+  <li class="tel">027-361-4950</li>
+  <li class="tempo">井野・橋本 </li>
+  <li class="tel">027-361-9081</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">高崎・老川</li>
+  <li class="tel">027-361-2684</li>
+  <li class="tempo">高崎・関口</li>
+  <li class="tel">027-322-5249</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">高崎・関口北部</li>
+  <li class="tel">027-361-0755</li>
+  <li class="tempo">高崎・金井</li>
+  <li class="tel">027-361-0378</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">高崎・大川</li>
+  <li class="tel">027-323-0458</li>
+  <li class="tempo">高崎・前田</li>
+  <li class="tel">027-323-0522</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">中居・佐藤</li>
+  <li class="tel">027-346-4911</li>
+  <li class="tempo">中居・中村</li>
+  <li class="tel">027-352-9369</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">倉賀野・中村</li>
+  <li class="tel">027-346-7148</li>
+  <li class="tempo">倉賀野・高橋</li>
+  <li class="tel">027-346-2331</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">新町・余湖</li>
+  <li class="tel">0274-42-0149</li>
+  <li class="tempo">新町・三俣</li>
+  <li class="tel">0274-42-0268</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">新町・中村</li>
+  <li class="tel">0274-42-1818</li>
+  <li class="tempo">足門・宮川</li>
+  <li class="tel">027-372-1733</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">室田・大橋</li>
+  <li class="tel">027-374-0310</li>
+  <li class="tempo">吉井・片山</li>
+  <li class="tel">027-387-2013</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">伊勢崎・亀屋</li>
+  <li class="tel">0270-24-2662</li>
+  <li class="tempo">伊勢崎・根岸</li>
+  <li class="tel">0270-23-9180</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">伊勢崎・山崎</li>
+  <li class="tel">0270-25-3050</li>
+  <li class="tempo">伊勢崎・中木</li>
+  <li class="tel">0270-40-9007</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">伊勢崎・白井</li>
+  <li class="tel">0270-24-8555</li>
+  <li class="tempo">伊勢崎・読売 山崎</li>
+  <li class="tel">0270-25-7263</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">伊勢崎・森</li>
+  <li class="tel">0270-21-8633</li>
+  <li class="tempo">伊勢崎・内田</li>
+  <li class="tel">0270-25-1610</li>
+</ul>
+<ul class="flex-container">
+  <li class="tempo">国定・千吉良</li>
+  <li class="tel">0270-62-0052</li>
+  <li class="tempo">境・天田</li>
+  <li class="tel">0270-74-3380</li>
+</ul>
+<br />
+<div class="hanbai_chiku_title">
+東毛
+</div>
+<ul class="flex-container">
+<li class="tempo">太田・関口</li>
+<li class="tel">0276-46-2504</li>
+<li class="tempo">太田・岩井</li>
+<li class="tel">0276-22-2323</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">太田・小林</li>
+<li class="tel">0276-46-5378</li>
+<li class="tempo">太田・谷鹿</li>
+<li class="tel">0276-32-4551</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">太田・村松</li>
+<li class="tel">0276-47-2970</li>
+<li class="tempo">太田・菅野</li>
+<li class="tel">0276-38-2914</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">太田・堀澤</li>
+<li class="tel">0276-22-8191</li>
+<li class="tempo">太田・渡辺</li>
+<li class="tel">0276-45-2795</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">太田・村井</li>
+<li class="tel">0276-33-8080</li>
+<li class="tempo">桐生・林</li>
+<li class="tel">0277-44-8769</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">桐生・平間</li>
+<li class="tel">0277-43-7108</li>
+<li class="tempo">桐生・庭野</li>
+<li class="tel">0277-43-5857</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">桐生・石川</li>
+<li class="tel">0277-44-4311</li>
+<li class="tempo">桐生・大澤</li>
+<li class="tel">0277-43-1503</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">桐生・桑原</li>
+<li class="tel">0277-52-8050</li>
+<li class="tempo">桐生・内田</li>
+<li class="tel">0277-54-4311</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">館林・富田</li>
+<li class="tel">0276-72-1009</li>
+<li class="tempo">館林・渡辺</li>
+<li class="tel">0276-75-3665</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">館林・山崎</li>
+<li class="tel">0276-72-0747</li>
+<li class="tempo">館林・小峯</li>
+<li class="tel">0276-72-9005</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">館林・山本</li>
+<li class="tel">0276-72-0667</li>
+<li class="tempo">栃木黒川</li>
+<li class="tel">0282-62-2237</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">大間々・内田</li>
+<li class="tel">0277-72-1417</li>
+<li class="tempo">大間々・小林</li>
+<li class="tel">0277-72-1840</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">大間々・梁瀬</li>
+<li class="tel">0277-72-1226</li>
+<li class="tempo">岩宿・鶴田</li>
+<li class="tel">0277-76-3010</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">岩宿・小幡</li>
+<li class="tel">0277-77-2999</li>
+<li class="tempo">藪塚・松沢</li>
+<li class="tel">0277-78-8635</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">藪塚・石井</li>
+<li class="tel">0277-78-6571</li>
+<li class="tempo">尾島・阿久澤</li>
+<li class="tel">0276-52-0206</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">大泉・長山</li>
+<li class="tel">0276-62-2366</li>
+<li class="tempo">大泉・山本</li>
+<li class="tel">0276-62-3551</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">大泉・松沢</li>
+<li class="tel">0276-62-0843</li>
+<li class="tempo">本中野・赤坂</li>
+<li class="tel">0276-88-0675</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">本中野・松沢</li>
+<li class="tel">0276-88-0025</li>
+<li class="tempo">花輪・古美門</li>
+<li class="tel">0277-97-2759</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">赤岩・大橋</li>
+<li class="tel">0276-86-2271</li>
+<li class="tempo"></li>
+<li class="tel"></li>
+</ul>
+<br />
+<div class="hanbai_chiku_title">西北毛</div>
+<ul class="flex-container">
+<li class="tempo">安中・大橋</li>
+<li class="tel">027-382-1811</li>
+<li class="tempo">藤岡・堀口</li>
+<li class="tel">0274-22-0104</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">藤岡・余湖</li>
+<li class="tel">0274-23-3834</li>
+<li class="tempo">藤岡・浜野</li>
+<li class="tel">0274-22-0624</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">藤岡・浅野</li>
+<li class="tel">0274-24-5430</li>
+<li class="tempo">富岡・中木</li>
+<li class="tel">0274-64-3393</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">富岡・山久</li>
+<li class="tel">0274-63-7111</li>
+<li class="tempo">富岡・岡田</li>
+<li class="tel">0274-62-0169</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">富岡・星野</li>
+<li class="tel">0274-62-8401</li>
+<li class="tempo">下仁田・小沢</li>
+<li class="tel">0274-82-2045</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">鬼石・赤上</li>
+<li class="tel">0274-52-2247</li>
+<li class="tempo">渋川・野村</li>
+<li class="tel">0279-22-0766</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">渋川・南部</li>
+<li class="tel">0279-22-4131</li>
+<li class="tempo">渋川・小山</li>
+<li class="tel">0279-24-6318</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">八木原・小林</li>
+<li class="tel">0279-23-2178</li>
+<li class="tempo">八木原・太田</li>
+<li class="tel">0279-54-5700</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">八崎・中村</li>
+<li class="tel">0279-24-1811</li>
+<li class="tempo">敷島・狩野</li>
+<li class="tel">0279-56-2008</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">沼田・オグニヤ</li>
+<li class="tel">0278-22-4449</li>
+<li class="tempo">中之条・剱持</li>
+<li class="tel">0279-75-2322</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">原町・斎藤</li>
+<li class="tel">0279-68-2526</li>
+<li class="tempo">長野原・桜井</li>
+<li class="tel">0279-82-2161</li>
+</ul>
+<ul class="flex-container">
+<li class="tempo">草津・山本</li>
+<li class="tel">0279-88-5454</li>
+<li class="tempo"></li>
+<li class="tel"></li>
+</ul>
+</section>
+
+<section class="side">
+<div id="primary" class="sidebar">
+
+<div class="module">
+
+
+
+<!--/// 検索フォーム ///-->
+
+<form id="searchform" class="blog-search" method="get" action="http://www.jomonet.co.jp">
+<label for="s">サイトを検索</label><br />
+<input id="s" name="s" type="text" class="text" value="" size="10" tabindex="1" />
+<input type="submit" class="button" value="検索キーワード" tabindex="2" />
+</form>
+
+<!--/// HOME ///-->
+<ul class="top-module-list-home">
+<a href="http://www.jomonet.co.jp">HOME</a><br />
+</ul>
+
+<a href="http://www.jomonet.co.jp/?page_id=2"  class="imgov"><img src="http://www.jomonet.co.jp/wp-content/themes/sandbox/images/genre_choice.gif" width="294" height="32" border="0" id="top_choice" /></a>
+<ul class="top-module-ul">
+<li class="top-module-list"><a href="http://www.jomonet.co.jp/?cat=7">シリーズ</a></li>
+<li class="top-module-list"><a href="http://www.jomonet.co.jp/?cat=1">観光 レジャー</a></li>
+<li class="top-module-list"><a href="http://www.jomonet.co.jp/?cat=3">歴史 文化 教養</a></li>
+<li class="top-module-list"><a href="http://www.jomonet.co.jp/?cat=9">人文 思想 社会</a></li>
+<li class="top-module-list"><a href="http://www.jomonet.co.jp/?cat=4">生活 健康 食</a></li>
+<li class="top-module-list"><a href="http://www.jomonet.co.jp/?cat=5">趣味 スポーツ</a></li>
+<li class="top-module-list"><a href="http://www.jomonet.co.jp/?cat=6">写真集</a></li>
+<li class="top-module-list"><a href="http://www.jomonet.co.jp/?cat=7">シルクカントリー双書</a></li>
+<li class="top-module-list"><a href="http://www.jomonet.co.jp/?cat=8">ブックレット</a></li>
+</ul>
+<!--Facebook link -->
+<div class="facebook_center">
+<div class="fb-page" data-href="https://www.facebook.com/pages/%E4%B8%8A%E6%AF%9B%E6%96%B0%E8%81%9E%E7%A4%BE-%E5%87%BA%E7%89%88%E9%83%A8/216959131801751" data-width="280px" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/%E4%B8%8A%E6%AF%9B%E6%96%B0%E8%81%9E%E7%A4%BE-%E5%87%BA%E7%89%88%E9%83%A8/216959131801751"><a href="https://www.facebook.com/pages/%E4%B8%8A%E6%AF%9B%E6%96%B0%E8%81%9E%E7%A4%BE-%E5%87%BA%E7%89%88%E9%83%A8/216959131801751">上毛新聞社　出版部</a></blockquote></div></div>
+</div>
+
+<div id="navImage">
+  <a href="http://www.jomonet.co.jp/joshufu-page/index/home.htm" target="_blank"><img src="http://www.jomonet.co.jp/wp-content/themes/sandbox/images/go_joshufu.gif" alt="上州風" border="0" width="217" height="50" class="ImageOver" /></a><br />
+  <a href="http://www.raijin.com/graph/new/" target="_blank"><img src="http://www.jomonet.co.jp/wp-content/themes/sandbox/images/go_graph.gif" alt="グラフぐんま" border="0" width="217" height="50" class="ImageOver" /></a><br />
+</div><!-- // navImage -->
+<span id="navImage_after"><a href="http://www.47club.jp/shop/shop/shop.aspx?shop=12M-000002" target="blank" class="imgov"><img src="http://www.jomonet.co.jp/wp-content/themes/sandbox/images/syupan47club.gif" alt="" border="0" width="217" height="72" /></a></span><br />
+<ul class="top-module-ul">
+<li class="top-module-list-w">●&nbsp;<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2756799&pid=881141485" target="blank">47clubトップページ</a></li>
+</ul>
+<script type="text/javascript">
+$(document).ready(function (){
+  $("img.ImageOver").each(function () {
+      var off = this.src;
+      var on = this.src.split(".gif")[0]+"_over.gif";
+    $(this).hover(
+    function (){ this.src = on; },
+    function (){ this.src = off; });
+  });
+})
+</script>
+<!--/// 話題の本 ///-->
+<ul class="top-module-ul">
+<li class="top-module-list">シリーズ</li>
+<li class="top-module-list-w"><a href="http://www.jomonet.co.jp/?page_id=47">シルクカントリー双書</a></li>
+<li class="top-module-list-w"><a href="http://www.jomonet.co.jp/?page_id=49">ブックレット群馬大学</a></li>
+<li class="top-module-list-w"><a href="http://www.jomonet.co.jp/?page_id=61">共愛学園前橋国際大学ブックレット</a></li>
+<li class="top-module-list-w"><a href="http://www.jomonet.co.jp/?page_id=69">群馬の遺跡・全7巻</a></li>
+<li class="top-module-list-w"><a href="http://www.jomonet.co.jp/?page_id=118">温泉の本</a></li>
+</ul>
+
+<div id="navImage">
+<a href="javascript:void(window.open('http://www.jomonet.co.jp/wp-content/themes/sandbox/web_joshufu/web_joshufu.html', 'mywindow3', 'width=1234, height=842, menubar=no, toolbar=no, scrollbars=yes')); "><span class="http://www.jomonet.co.jp/wp-content/themes/sandbox/web_joshufu"><img src="http://www.jomonet.co.jp/wp-content/themes/sandbox/images/web_joshufu.gif" width="207" height="64" alt="Web上州風" border="0" class="ImageOver"></span></a><br />
+</div><!-- //navImage -->
+<script type="text/javascript">
+$(".web_joshufu").hover(function (){
+  $(this).fadeOut(200);
+  $(this).fadeIn(1);
+});
+</script>
+</div><!--// module -->
+
+<div class="module">
+<ul class="top-module-ul">
+<li class="top-module-list">本のお求めは</li>
+<!--<li class="top-module-list-w">●&nbsp;<a href="http://www.47club.jp/shop/shop/shop.aspx?shop=12M-000002" target="_blank">ネット</a>で手軽に</li>-->
+<li class="top-module-list-w"><strong>●&nbsp;<a href="http://www.jomonet.co.jp/?page_id=65">書店から</strong></a></li>
+<li class="top-module-list-w"><strong>●&nbsp;<a href="http://www.jomonet.co.jp/?page_id=63">上毛新聞取扱い新聞販売店から</strong></a></li>
+</ul>
+</div>
+
+<ul class="top-module-ul">
+<li class="top-module-list-furu"><a href="http://www.kyodo.co.jp/furusato/" target="_blank">ふるさと発見新聞社の本</a></li>
+<li class="top-module-list-w">各新聞社の出版物を検索できます</li>
+</ul>
+
+<ul class="top-module-ul">
+<li class="top-module-list"><a href="http://www.jomonet.co.jp/?page_id=52"><strong>お問い合わせ</strong></a></li>
+</ul>
+
+  <span id="navImage"><a href="http://www.jomonet.co.jp/?page_id=54"><img src="http://www.jomonet.co.jp/wp-content/themes/sandbox/images/mitsumori.jpg" width="217" height="99" alt="個人出版のご案内" class="ImageOver_j" /></a></span>
+  <script type="text/javascript">
+  $(document).ready(function (){
+    $("img.ImageOver_j").each(function () {
+        var off = this.src;
+        var on = this.src.split(".jpg")[0]+"_over.jpg";
+      $(this).hover(
+      function (){ this.src = on; },
+      function (){ this.src = off; });
+    });
+  })
+  </script>
+
+<!-- raijin.com へ-->
+<br />
+<span id="navImage"><a href="http://www.raijin.com" target="_blank" class="imgov"><img src='http://www.jomonet.co.jp/wp-content/themes/sandbox/images/to_jomosinbun.jpg' alt='' border='0' width='217' height='42' ></a></span><br /><br />
+
+
+<ul class="xoxo">
+<!-- リンク -->
+<p>
+<br />
+</p>
+<p>
+<br />
+</p>
+<p>
+<br />
+</p>
+<p>
+<br />
+</p>
+<p>
+<br />
+</p>
+</ul>
+</div><!--// primary sidebar-->
+</section>
+</div>
+
+
+
 </body>
 </html>
