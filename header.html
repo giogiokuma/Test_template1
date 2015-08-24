@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initail-scale=1">
+  <title>テスト</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/hanbaiten.css">
+  <style>
+
+header {
+  height:120px;
+  background:url('./img/top_bg1.png') repeat-x top left;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul.nav_top {
+
+  width:100%;
+  margin-top:-15px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+    height:42px;
+  background-color: #f9f9f9;
+
+}
+
+ul.nav_top>li {
+  list-style: none;
+  background-color: #f9f9f9;
+  font-weight:700;
+  font-size:.9em; 
+  border-right:1px solid #ccc;
+  width:140px;
+  text-align: center;
+}
+
+ul.nav_top li a{
+  text-decoration: none;
+  display:block;
+  padding: 1em;
+  color:#999;
+}
+ul.nav_top li a:hover {
+  background:#cedff2;
+}
+div#header-title {
+padding-top: 1px;
+}
+div#header-title .blog_img {
+  margin-top:0px;
+  padding-top:0px;
+  height:120px;
+  background:url('./img/top_title.gif') no-repeat top left;
+}
+
+.hanbai_chiku_title {
+    padding: 5px 15px 5px 15px;
+    list-style:none;
+    border-left:4px solid #ccc;
+    background-color:#eeefef;
+    color:#666;
+    font-size:120%;
+    font-weight: bold;
+  }  </style>
+
+</head>
+<body>
+<header>
+<div class="flex-container">
+<div id="header-title">
+<div class="blog_img"></div>
+</h1>
+
+<ul class="nav_top">
+<li><a href="#">Home</a></li>
+<li><a href="#">ジャンル</a></li>
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+</ul>
+
+</div><!--header-title-->
+</header>
+
+
+
+
+
+</body>
+</html>
