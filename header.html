@@ -53,6 +53,67 @@ ul.nav_top li a{
 ul.nav_top li a:hover {
   background:#cedff2;
 }
+
+@media only screen and (min-width:320px) {
+  ul.nav_top {
+    float:left;
+    width:44px;
+    height:42px;
+    background-size:44px 44px;
+    cursor: pointer;
+  }
+  ul.nav_top li:first-child {
+    background:url('./img/cd-icon-menu.svg') no-repeat left center;
+    height:42px;
+    z-index:2;
+  }
+  ul.nav_top li a{
+    display:none;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  ul.nav_top {
+
+  width:100%;
+  margin-top:-15px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+    height:42px;
+  background-color: #f9f9f9;
+
+}
+ ul.nav_top li:first-child{
+  display:none;
+}
+ul.nav_top>li {
+  list-style: none;
+  background-color: #f9f9f9;
+  font-weight:700;
+  font-size:.9em; 
+  border-right:1px solid #ccc;
+  width:140px;
+  text-align: center;
+  display:visible;
+}
+
+ul.nav_top li a{
+  text-decoration: none;
+  display:block;
+  padding: 1em;
+  color:#999;
+}
+ul.nav_top li a:hover {
+  background:#cedff2;
+}
+}
+
 div#header-title {
 padding-top: 1px;
 }
@@ -73,6 +134,8 @@ div#header-title .blog_img {
     font-weight: bold;
   }  </style>
 
+
+
 </head>
 <body>
 <header>
@@ -82,6 +145,7 @@ div#header-title .blog_img {
 </h1>
 
 <ul class="nav_top">
+<li class="menu"><a href="#"></a></li>
 <li><a href="#">Home</a></li>
 <li><a href="#">ジャンル</a></li>
 <li><a href="#">サイトマップ</a></li>
