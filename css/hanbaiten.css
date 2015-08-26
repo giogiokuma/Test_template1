@@ -1,0 +1,141 @@
+
+
+header {
+  height: 120px;
+  background: url('./img/top_bg1.png') repeat-x top left;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+div#header-title {
+  padding-top: 1px ;
+}
+div#header-title .blog_img {
+  width: 689px;
+  margin-top: 0;
+  padding-top: 0;
+  height:120px;
+  background:url('./img/top_title.gif');
+}
+
+.navigation {
+position:absolute;
+top:106px;
+float:left;
+padding-right: 20px;
+width:60px;
+height:44px;
+background: #f9f9f9 url('./img/cd-icon-menu.svg') no-repeat center center;
+cursor: pointer;
+}
+
+.navigation ul {
+  position:absolute;
+  top:0;
+  left:0;
+  width:689px;
+  -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    -o-transform: translateY(-200%);
+    transform: translateY(-200%);
+}
+.navigation ul.is-visible {
+  -webkit-transform: translateY(45px);
+      -moz-transform: translateY(45px);
+      -ms-transform: translateY(45px);
+      -o-transform: translateY(45px);
+      transform: translateY(45px);
+}
+
+.navigation a {
+  display:block;
+  height:44px;
+  line-height: 44px;
+  padding-left: 30px;
+  background:#f9f9f9;
+  border-top: 1px solid #453c3d;
+  color:#8e7d7f;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    width: auto;
+    height: auto;
+    background: none;
+    cursor: auto;
+
+  }
+
+  .navigation ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow:row wrap;
+    justify-content: flex-start;
+    position: static;
+    background-color: #f9f9f9;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    line-height: 44px;
+
+  }
+
+  .navigation ul.is-visible {
+    -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+          transform: translateY(0); 
+  }
+  .navigation li {
+    display:inline-block;
+  }
+
+  .navigation a {
+    border-right: 1px solid #ccc;
+    display:inline-block;
+    height: auto;
+    line-height:auto;
+    padding:.4em 2em;
+    border-top:none;
+    color:#999;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:0.875rem;
+  }
+
+  .navigation ul li a:hover {
+    
+    padding:.4em 2em;
+    background:#cedff2;
+  }
+
+  .no-touch .cd-main-nav a:hover {
+    color:#99a478;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
