@@ -1,9 +1,9 @@
 
+
 $(function() {
-  $('.navigation').on('click', function(event){
-    if($(event.target).is('.navigation')) $(this).children('ul').toggleClass('is-visible');
-  });
   
 
-
+  $('.main-nav').on('click', function() {
+     if($(event.target).is('.main-nav')) $(this).children('ul').toggleClass("is-visible");
+  });
 });
