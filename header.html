@@ -17,11 +17,8 @@ header {
 a {
   text-decoration: none;
 }
-
-ul.nav_top {
-
-  width:100%;
-  margin-top:-15px;
+.navigation {
+  background-color:#f9f9f9;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -29,9 +26,10 @@ ul.nav_top {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-start;
-    height:42px;
-  background-color: #f9f9f9;
-
+  }
+ul.nav_top {
+  width:100%;
+  height:42px;
 }
 
 ul.nav_top>li {
@@ -55,6 +53,7 @@ ul.nav_top li a:hover {
 }
 
 @media only screen and (min-width:320px) {
+  
   ul.nav_top {
     float:left;
     width:44px;
@@ -75,7 +74,6 @@ ul.nav_top li a:hover {
 
 @media only screen and (min-width: 768px) {
   ul.nav_top {
-
   width:100%;
   margin-top:-15px;
   display: -webkit-box;
@@ -144,6 +142,7 @@ div#header-title .blog_img {
 <div class="blog_img"></div>
 </h1>
 
+<div class="navigation">
 <ul class="nav_top">
 <li class="menu"><a href="#"></a></li>
 <li><a href="#">Home</a></li>
@@ -151,6 +150,7 @@ div#header-title .blog_img {
 <li><a href="#">サイトマップ</a></li>
 <li><a href="#">お問い合わせ</a></li>
 </ul>
+</div>
 
 </div><!--header-title-->
 </header>

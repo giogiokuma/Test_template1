@@ -1,28 +1,186 @@
-/* line 5, ../sass/practice.scss */
-.main-nav {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+@charset "UTF-8";
+/* line 3, ../sass/practice.scss */
+header {
+  height: 170px;
+  background: url("../img/top_bg1.png") repeat-x, top left;
 }
 
-/* line 11, ../sass/practice.scss */
+/* line 8, ../sass/practice.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 12, ../sass/practice.scss */
 li {
   list-style: none;
 }
 
-/* line 14, ../sass/practice.scss */
-.main-nav a {
-  main: 10px;
-  border-radius: 5px;
-  background: #60B99A;
-  color: #fff;
-  display: block;
-  padding: 15px;
-  text-decoration: none;
+/* line 15, ../sass/practice.scss */
+div#header-title .blog_img {
+  margin-top: 0px;
+  padding-top: 0px;
+  height: 120px;
+  background: url("../img/top_title.gif") no-repeat top left;
+  z-index: 2;
 }
 
-/* line 23, ../sass/practice.scss */
-.main-nav .logo {
-  background: #4584b1;
+/*.main-nav {
+    position:absolute;
+    top:105px;
+}
+
+
+ul.nav_top, .main {
+    @include display-flex;
+}
+ul.nav_top>li>a {
+    background:#f9f9f9;
+    color:#999;
+    display:block;
+    padding:15px;
+    text-decoration:none;
+    
+}
+
+ul.nav_top, .menu {
+    background:#f9f9f9;
+}
+
+ul.nav_top li a {
+  @include transform(translateY(0));
+  }
+ */
+@media only screen and (min-width: 320px) {
+  /* line 52, ../sass/practice.scss */
+  .main-nav {
+    position: absolute;
+    top: 105px;
+    float: left;
+    width: 100%;
+    padding: 15px;
+    background: #f9f9f9 url("../img/cd-icon-menu.svg") no-repeat left center;
+    cursor: pointer;
+  }
+
+  /* line 62, ../sass/practice.scss */
+  .main-nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -moz-transform: translateY(-300%);
+    -ms-transform: translateY(-300%);
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  /* line 69, ../sass/practice.scss */
+  .main-nav ul.is-visible {
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+	z-index:10;
+  }
+ .main-nav ul.is-visible li{
+	padding:7px;
+	background-color:#fff;
+}
+
+  /* line 72, ../sass/practice.scss */
+  .min-nav ul li {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 5%;
+    border-top: 1px solid #453c3d;
+    color: #8e7d7f;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 84, ../sass/practice.scss */
+  .main-nav {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 106px;
+    width: 100%;
+    cursor: auto;
+    height: 50px;
+    background-color: #f9f9f9;
+    background-image: none;
+  }
+
+  /* line 95, ../sass/practice.scss */
+  .main-nav ul {
+    position: static;
+    display: -webkit-flex;
+    display: flex;
+    -moz-transform: translateY(-17px);
+    -ms-transform: translateY(-17px);
+    -webkit-transform: translateY(-17px);
+    transform: translateY(-17px);
+  }
+
+  /* line 101, ../sass/practice.scss */
+  .main-nav ul li {
+    display: inline;
+    padding: 17px;
+  }
+
+  /* line 105, ../sass/practice.scss */
+  .main-nav ul li:hover {
+    background: #cedff2;
+  }
+
+  /* line 108, ../sass/practice.scss */
+  .main-nav ul.is-visible {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/* コンテンツ */
+/* コンテンツ */
+/* line 119, ../sass/practice.scss */
+.cd-main-content {
+  position: relative;
+  clear: both;
+  z-index:1;
+}
+
+/* line 123, ../sass/practice.scss */
+.main {
+  border: 1px solid #fcc;
+  margin-bottom: 10px;
+}
+
+/* line 127, ../sass/practice.scss */
+.side {
+  border: 1px solid #fea;
+}
+
+/* line 130, ../sass/practice.scss */
+.main, .side {
+  padding: 2%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 135, ../sass/practice.scss */
+  .cd-main-content {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  /* line 138, ../sass/practice.scss */
+  .main {
+    margin: 0 10px 0 0;
+    flex: 2;
+  }
+
+  /* line 142, ../sass/practice.scss */
+  .side {
+    flex: 1;
+  }
 }
