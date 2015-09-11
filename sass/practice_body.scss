@@ -1,0 +1,49 @@
+@import "compass/css3";
+
+
+
+
+.item {
+  border-radius:0px;
+  background:#fff;
+  padding:0px;
+  margin:7px;
+  text-align:center;
+  box-shadow:0 0 7px 0 #CCC;
+  -moz-box-shadow:0 0 7px 0 #CCC;
+  -webkit-box-shadow:0 0 7px 0 #CCC
+}
+p {
+  padding:10px;
+  color:#666;
+}
+img {
+  width:100%; 
+  height: auto;
+}
+p {
+  text-align:left;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .flexbox {
+  width:768px;
+  @include display-flex();
+  @include flex-wrap(wrap);
+  @include flex-direction(column);
+  max-height: 800px;
+  }
+
+  .item {
+  width:30%;
+  box-shadow:0 0 7px 0 #CCC;
+  -moz-box-shadow:0 0 7px 0 #CCC;
+  -webkit-box-shadow:0 0 7px 0 #CCC
+  }
+  p {
+  padding:8px;
+  color:#999;
+  }
+}
+
