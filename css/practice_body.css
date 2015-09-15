@@ -1,4 +1,27 @@
-/* line 6, ../sass/practice_body.scss */
+/* line 5, ../sass/practice_body.scss */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/practice_body.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 13, ../sass/practice_body.scss */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 18, ../sass/practice_body.scss */
+body {
+  color: #555;
+}
+
+/* line 22, ../sass/practice_body.scss */
 .item {
   border-radius: 0px;
   background: #fff;
@@ -10,37 +33,79 @@
   -webkit-box-shadow: 0 0 7px 0 #CCC;
 }
 
-/* line 16, ../sass/practice_body.scss */
+/* line 32, ../sass/practice_body.scss */
+h3 {
+  padding-left: 10px;
+}
+
+/* line 35, ../sass/practice_body.scss */
 p {
   padding: 10px;
   color: #666;
 }
 
-/* line 20, ../sass/practice_body.scss */
+/* line 39, ../sass/practice_body.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 24, ../sass/practice_body.scss */
+/* line 43, ../sass/practice_body.scss */
 p {
   text-align: left;
 }
 
+@media only screen and (min-width: 320px) {
+  /* line 48, ../sass/practice_body.scss */
+  .item {
+    text-align: left;
+  }
+
+  /* line 51, ../sass/practice_body.scss */
+  .author {
+    font-weight: bold;
+  }
+
+  /* line 54, ../sass/practice_body.scss */
+  h3.book_title {
+    width: 100%;
+    font-size: 1.5rem;
+    float: left;
+  }
+
+  /* line 59, ../sass/practice_body.scss */
+  p {
+    font-size: 1.2rem;
+  }
+}
 @media only screen and (min-width: 768px) {
-  /* line 30, ../sass/practice_body.scss */
+  /* line 63, ../sass/practice_body.scss */
   .flexbox {
+    border: 1px solid #999;
     width: 768px;
     display: -webkit-flex;
     display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
     -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
     -webkit-flex-direction: column;
+    -moz-flex-direction: column;
     flex-direction: column;
-    max-height: 800px;
+    -ms-flex-direction: column;
+    max-height: 1200px;
   }
 
-  /* line 38, ../sass/practice_body.scss */
+  /* line 72, ../sass/practice_body.scss */
   .item {
     width: 30%;
     box-shadow: 0 0 7px 0 #CCC;
@@ -48,9 +113,22 @@ p {
     -webkit-box-shadow: 0 0 7px 0 #CCC;
   }
 
-  /* line 44, ../sass/practice_body.scss */
+  /* line 78, ../sass/practice_body.scss */
+  .author {
+    font-weight: bold;
+  }
+
+  /* line 81, ../sass/practice_body.scss */
+  h3.book_title {
+    font-size: 1.5rem;
+    float: left;
+    clear: both;
+  }
+
+  /* line 86, ../sass/practice_body.scss */
   p {
+    font-size: 1.2rem;
     padding: 8px;
-    color: #999;
+    color: #666;
   }
 }
