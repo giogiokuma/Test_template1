@@ -1,0 +1,50 @@
+
+@import 'bourbon/bourbon';
+@import 'compass/css3';
+
+.item {
+	border-radius: 0;
+	background:#fff;
+	padding:0;
+	margin:7px;
+	text-align:left;
+	@include box_shadow(0 0 7px 0 #ccc);
+}
+
+p {
+	padding:10px;
+	color:#666;
+}
+
+img {
+	width:100%;
+	height:auto;
+}
+
+p {
+	text-align: left;
+}
+.book_title {
+    padding-left:7px;
+}
+
+@media only screen and (min-width: 768px) {
+	.flexbox {
+		width:1050px;
+		@include display-flex();
+		@include flex-wrap(wrap);
+		@include flex-direction(row);
+		@include justify-content(flex-start);
+
+	}
+	.item {
+		@include flex-basis(200px);
+		@include flex-grow(0);
+		@include box_shadow(0 0 7px 0 #ccc);
+	}
+
+	p {
+		padding:8px;
+		color:#999;
+	}
+}
