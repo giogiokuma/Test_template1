@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initail-scale=1">
+  <title>テスト</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/hanbaiten.css">
+<<<<<<< HEAD
+  <style>
+
+header {
+  height:120px;
+  background:url('./img/top_bg1.png') repeat-x top left;
+}
+
+a {
+  text-decoration: none;
+}
+div#header-title {
+padding-top: 1px;
+}
+div#header-title .blog_img {
+  margin-top:0px;
+  padding-top:0px;
+  height:120px;
+  background:url('./img/top_title.gif') no-repeat top left;
+}
+@media only screen and (min-width: 320px) {
+nav.navigation {
+  position:absolute;
+  top:106px;
+  float: left;
+  padding-right: 20px;
+  width: 60px;
+  height: 44px;
+  background: #f9f9f9 url("./img/cd-icon-menu.svg") no-repeat center center;
+  cursor: pointer; 
+}
+ul {
+
+    -webkit-transform: translateY(-300%);
+    -moz-transform: translateY(-300%);
+    -ms-transform: translateY(-300%);
+    -o-transform: translateY(-300%);
+    transform: translateY(-300%);
+}
+ul.is-visible {
+   -webkit-transform: translateY(45px);
+      -moz-transform: translateY(45px);
+      -ms-transform: translateY(45px);
+      -o-transform: translateY(45px);
+      transform: translateY(45px);
+}
+ul.nav_a {
+  padding:1em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+
+}
+
+ul.nav_a>li {
+  list-style: none;
+  background-color: #f9f9f9;
+  font-weight:700;
+  font-size:.9em; 
+  border-top:1px solid #ccc;
+  width:640px;
+  text-align: left;
+}
+
+ul.nav_a li a{
+  width:250px;
+  text-decoration: none;
+  display:block;
+  padding: 1em;
+  color:#999;
+}
+}
+
+
+
+@media only screen and (min-width: 768px) {
+.navigation ul.nav_a {
+width:100%;
+margin-top:50px;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-flex-flow:row wrap;
+justify-content:flex-start;
+height: 44px;
+background-color:#f9f9f9;
+
+  }
+
+.navigation ul.nav_a>li {
+  list-style: none;
+  background-color:#f9f9f9;
+  font-weight:700;
+  font-size:.8em;
+  border-right: 1px solid #ccc;
+  width:140px;
+  text-align:center;
+  }
+
+.navigation ul.nav_a li a{
+  text-decoration: none;
+  display:inline-block;
+  padding:1em;
+  color:#999;
+  }
+.navigation ul.nav_a li a:hover {
+ background:#cedff2;
+  }
+  
+}
+
+
+
+
+
+.hanbai_chiku_title {
+    padding: 5px 15px 5px 15px;
+    list-style:none;
+    border-left:4px solid #ccc;
+    background-color:#eeefef;
+    color:#666;
+    font-size:120%;
+    font-weight: bold;
+  }  
+/* コンテンツ */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style:none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  
+}
+
+@media only screen and (min-width: 320px) {
+  .tempo, .tel {
+    padding: 7px 0px 7px 0px;
+    margin-left:0px;
+    min-width:180px;
+    border:none;
+    border-bottom:1px solid #cfcfcf;
+    }
+  .no-visible {
+    display: none;
+  } 
+}
+
+@media only screen and (min-width: 768px) {
+  .tempo, .tel{
+    padding: 8px 0 8px 0px;
+    margin-left:0px;
+    min-width:170px;
+    border-bottom:1px solid #cfcfcf;
+    }
+  .no-visible {
+    display: inline-block;
+  } 
+}
+@media only screen and (min-width: 1170px) {
+  .tempo, .tel {
+    flex:1;
+    padding: 7px 0px 7px 0px;
+    max-width:250px;
+    border-bottom:1px solid #cfcfcf;
+  }
+  .no-visible {
+    display: inline;
+  }
+}
+
+.hanbai_chiku_title {
+  padding: 5px 15px 5px 15px;
+  list-style:none;
+  border-left:4px solid #ccc;
+  background-color:#eeefef;
+  color:#666;
+  font-size:120%;
+  font-weight: bold;
+}
+
+/* sidebar */
+
+.module{
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  font-size: 100%;
+}
+
+.top-module-list-home {
+  margin: 1px 7px 0px 0;
+  padding: 5px 0 3px 12px;
+  list-style:none;
+  color:#666;
+  font-weight: bold;
+}
+
+.top-module-list {
+  margin: 1px 7px 1px 0;
+  padding: 5px 0 3px 12px;
+  list-style:none;
+  border-left:4px solid #ccc;
+  background-color:#eeefef;
+  color:#666;
+  font-weight: bold;
+}
+.top-module-list-hover {
+  margin: 1px 7px 1px 0;
+  padding: 5px 0 3px 12px;
+  list-style:none;
+  border-left:4px solid #ccc;
+  background-color:#ffffff;
+  color:#666;
+  font-weight: bold;
+}
+.top-module-list-furu {
+  font-size: 110%;
+  margin: 1px 7px 2px 0;
+  padding: 5px 0 4px 12px;
+  list-style:none;
+  border-left:4px solid #74C4AE;
+  background-color:#eeefef;
+  color:#666;
+  font-weight: bold;
+}
+.top-module-list-w {
+  margin: 1px 7px 1px 0;
+  padding: 5px 0 3px 12px;
+  list-style:none;
+  border-left:4px solid #fff;
+  background-color:#fff;
+  color:#8f8f8f;
+}
+.top-module-list-home a:link, .top-module-list-home a:visited {
+  color:#36414d;
+  font-weight: bold;
+}
+.top-module-list a:link{
+  color:#36414d;
+  font-weight: bold;
+}
+
+.top-module-list a:visited {
+  color:#36414d;
+  font-weight: bold;
+}
+.top-module-list-w a:link {
+  color:#183390;
+  font-weight: bold;
+}
+.top-module-list-w a:visited {
+  color:#183390;
+  font-weight: bold;
+}
+/*////////// イメージナビ //////////*/
+#navImage {
+  padding-top:7px;
+  padding-left: 11px;
+}
+#navImage_after {
+  padding-top:12px;
+  padding-left:11px;
+}
+#navImage_after img, #navImage_after a:link img, #navImage_after a:visited img {
+  padding-top:12px;
+  padding-left:2px;
+}
+#navImage img {
+  padding-top:8px;
+  padding-bottom:3px;
+}
+
+#navImage .web_joshufu img {
+  padding-top:5px;
+  padding-bottom:9px;
+}
+
+/*//////////　Form elements　//////////*/
+textarea{
+  width:430px;
+  height:200px;
+  border:1px solid #bcbcbc;
+  background-color:#fff;
+  }
+input{
+  width:169px;
+  height:22px;
+  margin-bottom:7px;
+  border:1px solid #bcbcbc;
+  background-color:#fff;
+  }
+input #button{
+  width:130px;
+  height:22px;
+  background-color: #ccc;
+}
+#submit,#searchsubmit{
+  width:220px;
+  padding-top:10px;
+  padding-left:10px;
+  padding-bottom:5px;
+  border:1px solid #bcbcbc;
+  background-color:#999;
+  }
+#searchform {
+  margin-top:15px;
+  margin-left:3px;
+  margin-right:3px;
+  padding-top:10px;
+    padding-left:6px;
+  padding-bottom:5px;
+  background:#f8f8f8;
+  border: 1px solid #d0d0d0;
+  -moz-border-radius:2px;/*firefox*/
+  -webkit-border-radius:2px;/*Safari and Chrome*/
+  border-radius:2px;/*Opera, IE9, future-proofing*/
+    }
+  .button {
+    width:130px;
+    background-color:#cccccc;
+    height:24px;
+  }
+  </style>
+
+<link rel="stylesheet" href="css/flexbox.css">
+
+</head>
+<body>
+<header>
+
+<div id="header-title">
+<div class="blog_img"></div>
+</h1>
+
+<nav class="navigation">
+<ul class="nav_a">
+<li><a href="#">Home</a></li>
+<li><a href="#">ジャンル</a></li>
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+</ul>
+
+</nav>
+
+
+
+</div><!--header-title-->
+</header>
+
+<!--コンテンツ-->
+<div class="flexbox">
+<section class="main">
+
+</section>
+
+<section class="side">
+
+</section>
+</div>
+=======
+ 
+</head>
+<body>
+<header>
+<div class="flex-container">
+<div id="header-title">
+<div class="blog_img"></div>
+
+<div class="navigation">
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">ジャンル</a></li>
+  <li><a href="#">サイトマップ</a></li>
+  <li><a href="#">お問い合わせ</a></li>
+</ul>
+</div>
+
+</div><!--header-title-->
+</div>
+</header>
+
+>>>>>>> cc3f0cc8c74bc81cfd384dadcf2412717f92ac6a
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

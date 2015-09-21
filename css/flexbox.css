@@ -1,0 +1,35 @@
+/* line 5, ../sass/flexbox.scss */
+.flexbox {
+  margin-top: 5%;
+}
+
+/* line 8, ../sass/flexbox.scss */
+.main {
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+/* line 12, ../sass/flexbox.scss */
+.side {
+  background: #fff;
+}
+
+/* line 15, ../sass/flexbox.scss */
+.main,
+.side {
+  padding: 2%;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 22, ../sass/flexbox.scss */
+  .flexbox {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  /* line 26, ../sass/flexbox.scss */
+  .main {
+    margin: 0 10px 0 0;
+  }
+}

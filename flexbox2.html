@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initail-scale=1">
+  <title>Document</title>
+
+<style>
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style:none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  
+}
+
+@media only screen and (min-width: 320px) {
+	.flex-item {
+		padding: 7px 0px 7px 0px;
+		margin-left:0px;
+		min-width:180px;
+		border:none;
+		border-bottom:1px solid #cfcfcf;
+	  }
+	.no-visible {
+	  display: none;
+	}	
+}
+
+@media only screen and (min-width: 768px) {
+	.flex-item {
+		padding: 8px 0 8px 0px;
+		margin-left:0px;
+		min-width:170px;
+		border-bottom:1px solid #cfcfcf;
+	  }
+	.no-visible {
+	  display: inline-block;
+	}	
+}
+@media only screen and (min-width: 1170px) {
+	.flex-item {
+	  flex:1;
+	  padding: 7px 0px 7px 0px;
+	  max-width:250px;
+	  border-bottom:1px solid #cfcfcf;
+	}
+	.no-visible {
+	  display: inline;
+	}
+}
+
+.hanbai_chiku_title {
+  padding: 5px 15px 5px 15px;
+  list-style:none;
+  border-left:4px solid #ccc;
+  background-color:#eeefef;
+  color:#666;
+  font-size:120%;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="hanbai_chiku_title">
+県央
+</div>
+<ul class="flex-container">
+  <li class="flex-item">店名</li>
+  <li class="flex-item">電話</li>
+  <li class="flex-item no-visible">店名</li>
+  <li class="flex-item no-visible">電話</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">前橋・大西 </li>
+  <li class="flex-item">027-221-5538</li>
+  <li class="flex-item">前橋・岡野 </li>
+  <li class="flex-item">027-232-6819</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">前橋・北爪 </li>
+  <li class="flex-item">027-288-4211</li>
+  <li class="flex-item">前橋・野口 </li>
+  <li class="flex-item">027-263-0970</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">前橋・佐藤 </li>
+  <li class="flex-item">027-231-5274</li>
+  <li class="flex-item">前橋・狩野 </li>
+  <li class="flex-item">027-219-0352</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">前橋・山口 </li>
+  <li class="flex-item">027-233-6701</li>
+  <li class="flex-item">前橋・前田 </li>
+  <li class="flex-item">027-235-6600</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">前橋・松本 </li>
+  <li class="flex-item">027-265-6280</li>
+  <li class="flex-item">前橋・有友 </li>
+  <li class="flex-item">027-230-5501</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">新前橋・小林 </li>
+  <li class="flex-item">027-253-2415</li>
+  <li class="flex-item">新前橋・井口 </li>
+  <li class="flex-item">027-252-5678</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">新前橋・前田 </li>
+  <li class="flex-item">027-251-1077</li>
+  <li class="flex-item">元総社・川島 </li>
+  <li class="flex-item">027-253-2883</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">元総社・小林 </li>
+  <li class="flex-item">027-253-6721</li>
+  <li class="flex-item">元総社・前田 </li>
+  <li class="flex-item">027-251-7663</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">総社・山田 </li>
+  <li class="flex-item">027-251-7241</li>
+  <li class="flex-item">総社・田部井</li>
+  <li class="flex-item">027-251-3464</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">駒形・佐藤</li>
+  <li class="flex-item">027-266-3337</li>
+  <li class="flex-item">駒形・根岸</li>
+  <li class="flex-item">027-266-1307</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">大胡・藤井</li>
+  <li class="flex-item">027-283-3824</li>
+  <li class="flex-item">大胡・大崎</li>
+  <li class="flex-item">027-283-2160</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">玉村・余湖</li>
+  <li class="flex-item">027-065-8139</li>
+  <li class="flex-item">玉村・森</li>
+  <li class="flex-item">027-065-8573</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">玉村・中村</li>
+  <li class="flex-item">027-064-3300</li>
+  <li class="flex-item">高崎・宮川</li>
+  <li class="flex-item">027-322-6401</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">高崎・武</li>
+  <li class="flex-item">027-322-5590</li>
+  <li class="flex-item">高崎・武南部</li>
+  <li class="flex-item">027-322-0722</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">高崎・橋本</li>
+  <li class="flex-item">027-361-4950</li>
+  <li class="flex-item">井野・橋本</li>
+  <li class="flex-item">027-361-9081</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">高崎・老川</li>
+  <li class="flex-item">027-361-2684</li>
+  <li class="flex-item">高崎・関口</li>
+  <li class="flex-item">027-322-5249</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">高崎・関口北部</li>
+  <li class="flex-item">027-361-0755</li>
+  <li class="flex-item">高崎・金井</li>
+  <li class="flex-item">027-361-0378</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">高崎・大川</li>
+  <li class="flex-item">027-323-0458</li>
+  <li class="flex-item">高崎・前田</li>
+  <li class="flex-item">027-323-0522</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">中居・佐藤</li>
+  <li class="flex-item">027-346-4911</li>
+  <li class="flex-item">中居・中村</li>
+  <li class="flex-item">027-352-9369</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">倉賀野・中村</li>
+  <li class="flex-item">027-346-7148</li>
+  <li class="flex-item">倉賀野・高橋</li>
+  <li class="flex-item">027-346-2331</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">新町・余湖</li>
+  <li class="flex-item">0274-42-0149</li>
+  <li class="flex-item">新町・三俣</li>
+  <li class="flex-item">0274-42-0268</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">新町・中村</li>
+  <li class="flex-item">0274-42-1818</li>
+  <li class="flex-item">足門・宮川</li>
+  <li class="flex-item">027-372-1733</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">室田・大橋</li>
+  <li class="flex-item">027-374-0310</li>
+  <li class="flex-item">吉井・片山</li>
+  <li class="flex-item">027-387-2013</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">伊勢崎・亀屋</li>
+  <li class="flex-item">0270-24-2662</li>
+  <li class="flex-item">伊勢崎・根岸</li>
+  <li class="flex-item">0270-23-9180</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">伊勢崎・山崎</li>
+  <li class="flex-item">0270-25-3050</li>
+  <li class="flex-item">伊勢崎・中木</li>
+  <li class="flex-item">0270-40-9007</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">伊勢崎・白井</li>
+  <li class="flex-item">0270-24-8555</li>
+  <li class="flex-item">伊勢崎・読売 山崎</li>
+  <li class="flex-item">0270-25-7263</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">伊勢崎・森</li>
+  <li class="flex-item">0270-21-8633</li>
+  <li class="flex-item">伊勢崎・内田</li>
+  <li class="flex-item">0270-25-1610</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">国定・千吉良</li>
+  <li class="flex-item">0270-62-0052</li>
+  <li class="flex-item">境・天田</li>
+  <li class="flex-item">0270-74-3380</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item"></li>
+  <li class="flex-item"></li>
+  <li class="flex-item"></li>
+  <li class="flex-item"></li>
+</ul>
+<div class="hanbai_chiku_title">
+東毛
+</div>
+<ul class="flex-container">
+  <li class="flex-item">店名</li>
+  <li class="flex-item">電話</li>
+  <li class="flex-item no-visible">店名</li>
+  <li class="flex-item no-visible">電話</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">太田・関口</li>
+  <li class="flex-item">0276-46-2504</li>
+  <li class="flex-item">太田・岩井</li>
+  <li class="flex-item">0276-22-2323</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">太田・小林</li>
+  <li class="flex-item">0276-46-5378</li>
+  <li class="flex-item">太田・谷鹿</li>
+  <li class="flex-item">0276-32-4551</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">太田・村松</li>
+  <li class="flex-item">0276-47-2970</li>
+  <li class="flex-item">太田・菅野</li>
+  <li class="flex-item">0276-38-2914</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">太田・堀澤</li>
+  <li class="flex-item">0276-22-8191</li>
+  <li class="flex-item">太田・渡辺</li>
+  <li class="flex-item">0276-45-2795</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">太田・村井</li>
+  <li class="flex-item">0276-33-8080</li>
+  <li class="flex-item">桐生・林</li>
+  <li class="flex-item">0277-44-8769</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">桐生・平間</li>
+  <li class="flex-item">0277-43-7108</li>
+  <li class="flex-item">桐生・庭野</li>
+  <li class="flex-item">0277-43-5857</li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item">桐生・石川</li>
+  <li class="flex-item">0277-44-4311</li>
+  <li class="flex-item"></li>
+  <li class="flex-item"></li>
+</ul>
+<ul class="flex-container">
+  <li class="flex-item"></li>
+  <li class="flex-item"></li>
+  <li class="flex-item"></li>
+  <li class="flex-item"></li>
+</ul>
+</body>
+</html>

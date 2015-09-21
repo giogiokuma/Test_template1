@@ -1,0 +1,101 @@
+@import "compass/css3";
+
+@import 'bourbon/bourbon'; 
+
+*, *::after, *::before {
+	@include box-sizing(border-box);
+}
+
+html {
+	font-size:62.5%;
+}
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	color:#555;
+}
+
+.item {
+  border-radius:0px;
+  background:#fff;
+  padding:0px;
+  margin:7px;
+  text-align:center;
+  box-shadow:0 0 7px 0 #CCC;
+  -moz-box-shadow:0 0 7px 0 #CCC;
+  -webkit-box-shadow:0 0 7px 0 #CCC
+}
+h3 {
+	padding-left:10px;
+}
+p {
+  padding:10px;
+  color:#666;
+}
+img {
+  width:100%; 
+  height: auto;
+}
+p {
+  text-align:left;
+}
+
+@media only screen and (min-width: 320px) {
+	.item {
+		text-align:left;
+	}
+	.author {
+		font-weight: bold;
+	}
+	h3.book_title {
+	width:100%;
+	font-size:1.5rem;
+	float:left;
+	}
+	p {font-size:1.2rem;}
+}
+@media only screen and (min-width: 768px) {
+
+  .flexbox {
+  border:1px solid #999;
+  width:768px;
+  @include display-flex();
+  @include flex-wrap(wrap);
+  @include flex-direction(column);
+  max-height:1200px;
+  }
+
+  .item {
+  width:30%;
+  box-shadow:0 0 7px 0 #CCC;
+  -moz-box-shadow:0 0 7px 0 #CCC;
+  -webkit-box-shadow:0 0 7px 0 #CCC
+  }
+	.author {
+		font-weight: bold;
+	}
+	h3.book_title {
+	font-size:1.5rem;
+	float:left;
+	clear:both;
+	}
+  p {
+  font-size:1.2rem;
+  padding:8px;
+  color:#666;
+  }
+}
+
+@media only screen and (min-width: 1170px ) {
+	.flexbox {
+		width:1170px;
+		@include display-flex();
+		@include flex-wrap(wrap);
+		@include flex-direction(column);
+
+	}
+}
