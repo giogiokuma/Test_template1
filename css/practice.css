@@ -18,26 +18,41 @@ html * {
 /* line 19, ../sass/practice.scss */
 body {
   color: #555;
+  font: 1em/1.67;
+  margin: 0;
+}
+
+/* line 25, ../sass/practice.scss */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 31, ../sass/practice.scss */
+.wrapper {
+  width: 95%;
+  margin: 1.5em auto;
 }
 
 /* ヘッダー */
-/* line 28, ../sass/practice.scss */
+/* line 44, ../sass/practice.scss */
 header {
   height: 170px;
   background: url("../img/top_bg1.png") repeat-x, top left;
 }
 
-/* line 33, ../sass/practice.scss */
+/* line 49, ../sass/practice.scss */
 a {
   text-decoration: none;
 }
 
-/* line 37, ../sass/practice.scss */
+/* line 53, ../sass/practice.scss */
 li {
   list-style: none;
 }
 
-/* line 40, ../sass/practice.scss */
+/* line 56, ../sass/practice.scss */
 div#header-title .blog_img {
   margin-top: 0px;
   padding-top: 0px;
@@ -46,34 +61,8 @@ div#header-title .blog_img {
   z-index: 2;
 }
 
-/*.main-nav {
-    position:absolute;
-    top:105px;
-}
-
-
-ul.nav_top, .main {
-    @include display-flex;
-}
-ul.nav_top>li>a {
-    background:#f9f9f9;
-    color:#999;
-    display:block;
-    padding:15px;
-    text-decoration:none;
-    
-}
-
-ul.nav_top, .menu {
-    background:#f9f9f9;
-}
-
-ul.nav_top li a {
-  @include transform(translateY(0));
-  }
- */
 @media only screen and (min-width: 320px) {
-  /* line 77, ../sass/practice.scss */
+  /* line 66, ../sass/practice.scss */
   .main-nav {
     position: absolute;
     top: 105px;
@@ -84,7 +73,7 @@ ul.nav_top li a {
     cursor: pointer;
   }
 
-  /* line 87, ../sass/practice.scss */
+  /* line 76, ../sass/practice.scss */
   .main-nav ul {
     position: absolute;
     top: 0;
@@ -97,7 +86,7 @@ ul.nav_top li a {
     transform: translateY(-300%);
   }
 
-  /* line 94, ../sass/practice.scss */
+  /* line 83, ../sass/practice.scss */
   .main-nav ul.is-visible {
     -webkit-transform: translateY(50px);
     -moz-transform: translateY(50px);
@@ -106,7 +95,7 @@ ul.nav_top li a {
     transform: translateY(50px);
   }
 
-  /* line 97, ../sass/practice.scss */
+  /* line 86, ../sass/practice.scss */
   .min-nav ul li {
     display: block;
     height: 50px;
@@ -117,7 +106,7 @@ ul.nav_top li a {
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 109, ../sass/practice.scss */
+  /* line 98, ../sass/practice.scss */
   .main-nav {
     padding: 0;
     margin: 0;
@@ -130,7 +119,7 @@ ul.nav_top li a {
     background-image: none;
   }
 
-  /* line 120, ../sass/practice.scss */
+  /* line 109, ../sass/practice.scss */
   .main-nav ul {
     position: static;
     display: -webkit-flex;
@@ -142,18 +131,18 @@ ul.nav_top li a {
     transform: translateY(-17px);
   }
 
-  /* line 126, ../sass/practice.scss */
+  /* line 115, ../sass/practice.scss */
   .main-nav ul li {
     display: inline;
     padding: 17px;
   }
 
-  /* line 130, ../sass/practice.scss */
+  /* line 119, ../sass/practice.scss */
   .main-nav ul li:hover {
     background: #cedff2;
   }
 
-  /* line 133, ../sass/practice.scss */
+  /* line 122, ../sass/practice.scss */
   .main-nav ul.is-visible {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -163,154 +152,155 @@ ul.nav_top li a {
   }
 }
 /* コンテンツ */
-/* line 144, ../sass/practice.scss */
+/* line 133, ../sass/practice.scss */
 .cd-main-content {
   position: relative;
   clear: both;
 }
 
-/* line 148, ../sass/practice.scss */
+/* line 137, ../sass/practice.scss */
 .main {
   border: 1px solid #fcc;
   margin-bottom: 10px;
 }
 
-/* line 152, ../sass/practice.scss */
+/* line 141, ../sass/practice.scss */
 .side {
   border: 1px solid #fea;
 }
 
-/* line 155, ../sass/practice.scss */
+/* line 144, ../sass/practice.scss */
 .main, .side {
   padding: 2%;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 160, ../sass/practice.scss */
+  /* line 149, ../sass/practice.scss */
   .cd-main-content {
     display: -webkit-flex;
     display: flex;
   }
 
-  /* line 163, ../sass/practice.scss */
+  /* line 152, ../sass/practice.scss */
   .main {
     margin: 0 10px 0 0;
     flex: 2;
   }
 
-  /* line 167, ../sass/practice.scss */
+  /* line 156, ../sass/practice.scss */
   .side {
     flex: 1;
   }
 }
-/* コンテンツ　新刊一覧 */
-/* line 174, ../sass/practice.scss */
+/* コンンテンツ一覧 */
+/* line 163, ../sass/practice.scss */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 169, ../sass/practice.scss */
+.masonry {
+  margin: 1.5em 0;
+  padding: 0;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  column-gap: 1.5em;
+  font-size: .85em;
+}
+
+/* line 178, ../sass/practice.scss */
 .item {
-  border-radius: 0px;
+  display: inline-block;
   background: #fff;
-  padding: 0px;
-  margin: 7px;
+  padding: 1.5em;
+  margin: 0 0 1.5em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.18);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 189, ../sass/practice.scss */
+.title, .footer {
   text-align: center;
-  box-shadow: 0 0 7px 0 #CCC;
-  -moz-box-shadow: 0 0 7px 0 #CCC;
-  -webkit-box-shadow: 0 0 7px 0 #CCC;
 }
 
-/* line 184, ../sass/practice.scss */
-h3 {
-  padding-left: 10px;
+/* line 193, ../sass/practice.scss */
+.title {
+  font-size: 1.75em;
+  margin: .25em 0;
 }
 
-/* line 187, ../sass/practice.scss */
-p {
-  padding: 10px;
+/* line 198, ../sass/practice.scss */
+.title a {
+  display: inline-block;
+  padding: .75em 1.25em;
+  color: #888;
+  border: 2px solid #aaa;
+  margin: .25em 1em 1em;
+  text-decoration: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 208, ../sass/practice.scss */
+.title {
   color: #666;
 }
 
-/* line 192, ../sass/practice.scss */
-p {
-  text-align: left;
+/* line 212, ../sass/practice.scss */
+.title a:hover {
+  color: #666;
+  border-color: #888;
+}
+
+/* line 217, ../sass/practice.scss */
+.share-link,
+.article-link {
+  color: #888;
 }
 
 @media only screen and (min-width: 320px) {
-  /* line 197, ../sass/practice.scss */
-  .item {
-    text-align: left;
-  }
-
-  /* line 200, ../sass/practice.scss */
-  .author {
-    font-weight: bold;
-  }
-
-  /* line 203, ../sass/practice.scss */
-  h3.book_title {
-    width: 100%;
-    font-size: 1.5rem;
-    float: left;
-  }
-
-  /* line 208, ../sass/practice.scss */
-  p {
-    font-size: .9rem;
+  /* line 222, ../sass/practice.scss */
+  .masonry {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
   }
 }
-@media only screen and (min-width: 768px) {
-  /* line 212, ../sass/practice.scss */
-  .flexbox {
-    border: 1px solid #999;
-    width: 768px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    box-lines: multiple;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-box-direction: normal;
-    -moz-box-direction: normal;
-    box-direction: normal;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-direction: column;
-    max-height: 1200px;
-  }
-
-  /* line 221, ../sass/practice.scss */
-  .item {
-    width: 30%;
-    box-shadow: 0 0 7px 0 #CCC;
-    -moz-box-shadow: 0 0 7px 0 #CCC;
-    -webkit-box-shadow: 0 0 7px 0 #CCC;
-  }
-
+@media only screen and (min-width: 700px) {
   /* line 227, ../sass/practice.scss */
-  .author {
-    font-weight: bold;
+  .masonry {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
   }
-
-  /* line 230, ../sass/practice.scss */
-  h3.book_title {
-    font-size: 1.5rem;
-    float: left;
-    clear: both;
+}
+@media only screen and (min-width: 900px) {
+  /* line 234, ../sass/practice.scss */
+  .masonry {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
   }
-
-  /* line 235, ../sass/practice.scss */
-  p {
-    font-size: .9rem;
-    padding: 8px;
-    color: #666;
+}
+@media only screen and (min-width: 1280px) {
+  /* line 240, ../sass/practice.scss */
+  .masonry {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
   }
 }
 /* sidebar */
-/* line 250, ../sass/practice.scss */
+/* line 246, ../sass/practice.scss */
 .module {
   position: relative;
   overflow: hidden;
@@ -318,7 +308,7 @@ p {
   font-size: .9rem;
 }
 
-/* line 256, ../sass/practice.scss */
+/* line 252, ../sass/practice.scss */
 ul.top-module-ul > li {
   margin: 1px 7px 1px 0px;
   padding: 10px 0 8px 12px;
@@ -329,12 +319,12 @@ ul.top-module-ul > li {
   font-weight: bold;
 }
 
-/* line 266, ../sass/practice.scss */
+/* line 262, ../sass/practice.scss */
 ul.top-module-ul > li:hover {
   background: #f9f9f9;
 }
 
-/* line 269, ../sass/practice.scss */
+/* line 265, ../sass/practice.scss */
 .top-module-list-home {
   margin: 1px 7px 0px 0;
   padding: 5px 0 3px 12px;
@@ -343,7 +333,7 @@ ul.top-module-ul > li:hover {
   font-weight: bold;
 }
 
-/* line 277, ../sass/practice.scss */
+/* line 273, ../sass/practice.scss */
 .top-module-list {
   margin: 1px 7px 1px 0;
   padding: 5px 0 3px 12px;
@@ -355,20 +345,20 @@ ul.top-module-ul > li:hover {
   font-size: .9rem;
 }
 
-/* line 287, ../sass/practice.scss */
+/* line 283, ../sass/practice.scss */
 .top-module-list a:link {
   color: #36414d;
   font-weight: bold;
   font-size: .9rem;
 }
 
-/* line 293, ../sass/practice.scss */
+/* line 289, ../sass/practice.scss */
 .top-module-list a:visited {
   color: #36414d;
   font-weight: bold;
 }
 
-/* line 297, ../sass/practice.scss */
+/* line 293, ../sass/practice.scss */
 .top-module-list-hover {
   margin: 1px 7px 1px 0;
   padding: 5px 0 3px 12px;
@@ -379,7 +369,7 @@ ul.top-module-ul > li:hover {
   font-weight: bold;
 }
 
-/* line 306, ../sass/practice.scss */
+/* line 302, ../sass/practice.scss */
 .top-module-list-furu {
   font-size: .9rem;
   margin: 1px 7px 2px 0;
@@ -391,7 +381,7 @@ ul.top-module-ul > li:hover {
   font-weight: bold;
 }
 
-/* line 316, ../sass/practice.scss */
+/* line 312, ../sass/practice.scss */
 .top-module-list-w {
   margin: 1px 7px 1px 0;
   padding: 5px 0 3px 12px;
@@ -401,69 +391,69 @@ ul.top-module-ul > li:hover {
   color: #8f8f8f;
 }
 
-/* line 324, ../sass/practice.scss */
+/* line 320, ../sass/practice.scss */
 .top-module-list-home a:link, .top-module-list-home a:visited {
   color: #36414d;
   font-weight: bold;
 }
 
-/* line 328, ../sass/practice.scss */
+/* line 324, ../sass/practice.scss */
 .top-module-list a:link {
   color: #36414d;
   font-weight: bold;
 }
 
-/* line 334, ../sass/practice.scss */
+/* line 330, ../sass/practice.scss */
 .top-module-list a:visited {
   color: #36414d;
   font-weight: bold;
 }
 
-/* line 338, ../sass/practice.scss */
+/* line 334, ../sass/practice.scss */
 .top-module-list-w a:link {
   color: #183390;
   font-weight: bold;
 }
 
-/* line 342, ../sass/practice.scss */
+/* line 338, ../sass/practice.scss */
 .top-module-list-w a:visited {
   color: #183390;
   font-weight: bold;
 }
 
 /*////////// イメージナビ //////////*/
-/* line 347, ../sass/practice.scss */
+/* line 343, ../sass/practice.scss */
 #navImage {
   padding-top: 7px;
   padding-left: 11px;
 }
 
-/* line 351, ../sass/practice.scss */
+/* line 347, ../sass/practice.scss */
 #navImage_after {
   padding-top: 12px;
   padding-left: 11px;
 }
 
-/* line 355, ../sass/practice.scss */
+/* line 351, ../sass/practice.scss */
 #navImage_after img, #navImage_after a:link img, #navImage_after a:visited img {
   padding-top: 12px;
   padding-left: 2px;
 }
 
-/* line 359, ../sass/practice.scss */
+/* line 355, ../sass/practice.scss */
 #navImage img {
   padding-top: 8px;
   padding-bottom: 3px;
 }
 
-/* line 364, ../sass/practice.scss */
+/* line 360, ../sass/practice.scss */
 #navImage .web_joshufu img {
   padding-top: 5px;
   padding-bottom: 9px;
 }
 
 /*//////////　Form elements　//////////*/
-/* line 370, ../sass/practice.scss */
+/* line 366, ../sass/practice.scss */
 textarea {
   width: 430px;
   height: 200px;
@@ -471,7 +461,7 @@ textarea {
   background-color: #fff;
 }
 
-/* line 376, ../sass/practice.scss */
+/* line 372, ../sass/practice.scss */
 input {
   width: 169px;
   height: 22px;
@@ -480,14 +470,14 @@ input {
   background-color: #fff;
 }
 
-/* line 383, ../sass/practice.scss */
+/* line 379, ../sass/practice.scss */
 input #button {
   width: 130px;
   height: 22px;
   background-color: #ccc;
 }
 
-/* line 388, ../sass/practice.scss */
+/* line 384, ../sass/practice.scss */
 #submit, #searchsubmit {
   width: 220px;
   padding-top: 10px;
@@ -497,7 +487,7 @@ input #button {
   background-color: #999;
 }
 
-/* line 396, ../sass/practice.scss */
+/* line 392, ../sass/practice.scss */
 #searchform {
   margin-top: 15px;
   margin-left: 3px;
@@ -515,7 +505,7 @@ input #button {
   /*Opera, IE9, future-proofing*/
 }
 
-/* line 409, ../sass/practice.scss */
+/* line 405, ../sass/practice.scss */
 .button {
   width: 130px;
   background-color: #cccccc;
