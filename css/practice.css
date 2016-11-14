@@ -1,79 +1,93 @@
-@charset "UTF-8";
-/* line 7, ../sass/practice.scss */
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+2.0 - Global
+3.0 - Header
+4.0 - Navigation
+5.0 - Content
+  5.1 - image iframe
+  5.2 - Title 
+  5.3 - Sidebar module
+*/
+/*--------------------------------------------------------------
+2.0 - Global
+----------------------------------------------------------------
 *, *::after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  @include box-sizing(border-box);
 }
-
 /*html {
   font-size:62.5%;
 }*/
-/* line 14, ../sass/practice.scss */
+/* line 27, ../scss/practice.scss */
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 19, ../sass/practice.scss */
+/* line 32, ../scss/practice.scss */
 body {
   color: #555;
   font: 1em/1.67;
   margin: 0;
 }
 
-/* line 25, ../sass/practice.scss */
+/* line 38, ../scss/practice.scss */
 img, iframe {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 31, ../sass/practice.scss */
+/* line 44, ../scss/practice.scss */
 .wrapper {
   width: 95%;
   margin: 1.5em auto;
 }
 
-/* ヘッダー */
-/* line 44, ../sass/practice.scss */
+/*--------------------------------------------------------------
+3.0 - Header
+----------------------------------------------------------------*/
+/* line 53, ../scss/practice.scss */
 header {
   height: 170px;
-  background: url("../img/top_bg1.png") repeat-x, top left;
+  background: url("../images/top_bg1.png") repeat-x, top left;
 }
 
-/* line 49, ../sass/practice.scss */
+/* line 57, ../scss/practice.scss */
 a {
   text-decoration: none;
 }
 
-/* line 53, ../sass/practice.scss */
+/* line 61, ../scss/practice.scss */
 li {
   list-style: none;
 }
 
-/* line 56, ../sass/practice.scss */
+/* line 65, ../scss/practice.scss */
 div#header-title .blog_img {
   margin-top: 0px;
   padding-top: 0px;
   height: 120px;
-  background: url("../img/top_title.gif") no-repeat top left;
+  background: url("../images/top_title.gif") no-repeat top left;
   z-index: 2;
 }
 
+/*--------------------------------------------------------------
+4.0 - Navigation
+----------------------------------------------------------------*/
 @media only screen and (min-width: 320px) {
-  /* line 66, ../sass/practice.scss */
+  /* line 78, ../scss/practice.scss */
   .main-nav {
     position: absolute;
     top: 105px;
     float: left;
     width: 100%;
     padding: 15px;
-    background: #f9f9f9 url("../img/cd-icon-menu.svg") no-repeat left center;
+    background: #f9f9f9 url("../images/cd-icon-menu.svg") no-repeat left center;
     cursor: pointer;
   }
 
-  /* line 76, ../sass/practice.scss */
+  /* line 88, ../scss/practice.scss */
   .main-nav ul {
     position: absolute;
     top: 0;
@@ -86,7 +100,7 @@ div#header-title .blog_img {
     transform: translateY(-300%);
   }
 
-  /* line 83, ../sass/practice.scss */
+  /* line 95, ../scss/practice.scss */
   .main-nav ul.is-visible {
     -webkit-transform: translateY(50px);
     -moz-transform: translateY(50px);
@@ -95,7 +109,7 @@ div#header-title .blog_img {
     transform: translateY(50px);
   }
 
-  /* line 86, ../sass/practice.scss */
+  /* line 98, ../scss/practice.scss */
   .min-nav ul li {
     display: block;
     height: 50px;
@@ -106,7 +120,7 @@ div#header-title .blog_img {
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 98, ../sass/practice.scss */
+  /* line 110, ../scss/practice.scss */
   .main-nav {
     padding: 0;
     margin: 0;
@@ -119,7 +133,7 @@ div#header-title .blog_img {
     background-image: none;
   }
 
-  /* line 109, ../sass/practice.scss */
+  /* line 121, ../scss/practice.scss */
   .main-nav ul {
     position: static;
     display: -webkit-flex;
@@ -131,18 +145,18 @@ div#header-title .blog_img {
     transform: translateY(-17px);
   }
 
-  /* line 115, ../sass/practice.scss */
+  /* line 127, ../scss/practice.scss */
   .main-nav ul li {
     display: inline;
     padding: 17px;
   }
 
-  /* line 119, ../sass/practice.scss */
+  /* line 131, ../scss/practice.scss */
   .main-nav ul li:hover {
     background: #cedff2;
   }
 
-  /* line 122, ../sass/practice.scss */
+  /* line 134, ../scss/practice.scss */
   .main-nav ul.is-visible {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -151,56 +165,60 @@ div#header-title .blog_img {
     transform: translateY(0);
   }
 }
-/* コンテンツ */
-/* line 133, ../sass/practice.scss */
+/*--------------------------------------------------------------
+5.0 - Content
+----------------------------------------------------------------*/
+/* line 144, ../scss/practice.scss */
 .cd-main-content {
   position: relative;
   clear: both;
 }
 
-/* line 137, ../sass/practice.scss */
+/* line 149, ../scss/practice.scss */
 .main {
   border: 1px solid #fcc;
   margin-bottom: 10px;
 }
 
-/* line 141, ../sass/practice.scss */
+/* line 154, ../scss/practice.scss */
 .side {
   border: 1px solid #fea;
 }
 
-/* line 144, ../sass/practice.scss */
+/* line 157, ../scss/practice.scss */
 .main, .side {
   padding: 2%;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 149, ../sass/practice.scss */
+  /* line 163, ../scss/practice.scss */
   .cd-main-content {
     display: -webkit-flex;
     display: flex;
   }
 
-  /* line 152, ../sass/practice.scss */
+  /* line 167, ../scss/practice.scss */
   .main {
     margin: 0 10px 0 0;
     flex: 2;
   }
 
-  /* line 156, ../sass/practice.scss */
+  /* line 171, ../scss/practice.scss */
   .side {
     flex: 1;
   }
 }
-/* コンンテンツ一覧 */
-/* line 163, ../sass/practice.scss */
+/*--------------------------------------------------------------
+5.1 - image iframe 
+----------------------------------------------------------------*/
+/* line 178, ../scss/practice.scss */
 img, iframe {
-  max-width: 100%;
+  max-height: 100%;
   height: auto;
   display: block;
 }
 
-/* line 169, ../sass/practice.scss */
+/* line 184, ../scss/practice.scss */
 .masonry {
   margin: 1.5em 0;
   padding: 0;
@@ -210,7 +228,7 @@ img, iframe {
   font-size: .85em;
 }
 
-/* line 179, ../sass/practice.scss */
+/* line 193, ../scss/practice.scss */
 .item {
   display: inline-block;
   background: #fff;
@@ -226,18 +244,21 @@ img, iframe {
   border-radius: 3px;
 }
 
-/* line 190, ../sass/practice.scss */
+/*--------------------------------------------------------------
+5.2 - Title 
+----------------------------------------------------------------*/
+/* line 207, ../scss/practice.scss */
 .title, .footer {
   text-align: center;
 }
 
-/* line 194, ../sass/practice.scss */
+/* line 211, ../scss/practice.scss */
 .title {
   font-size: 1.75em;
   margin: .25em 0;
 }
 
-/* line 199, ../sass/practice.scss */
+/* line 216, ../scss/practice.scss */
 .title a {
   display: inline-block;
   padding: .75em 1.25em;
@@ -250,25 +271,25 @@ img, iframe {
   border-radius: 3px;
 }
 
-/* line 209, ../sass/practice.scss */
+/* line 226, ../scss/practice.scss */
 .title {
   color: #666;
 }
 
-/* line 213, ../sass/practice.scss */
+/* line 230, ../scss/practice.scss */
 .title a:hover {
   color: #666;
   border-color: #888;
 }
 
-/* line 218, ../sass/practice.scss */
+/* line 235, ../scss/practice.scss */
 .share-link,
 .article-link {
   color: #888;
 }
 
 @media only screen and (min-width: 320px) {
-  /* line 223, ../sass/practice.scss */
+  /* line 241, ../scss/practice.scss */
   .masonry {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -276,7 +297,7 @@ img, iframe {
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 228, ../sass/practice.scss */
+  /* line 247, ../scss/practice.scss */
   .masonry {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -284,23 +305,25 @@ img, iframe {
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 235, ../sass/practice.scss */
+  /* line 254, ../scss/practice.scss */
   .masonry {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
   }
 }
-@media only screen and (min-width: 1280px) {
-  /* line 241, ../sass/practice.scss */
+@media only screen and (min-width: 1200) {
+  /* line 260, ../scss/practice.scss */
   .masonry {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
   }
 }
-/* sidebar */
-/* line 247, ../sass/practice.scss */
+/*--------------------------------------------------------------
+5.3 - Sidebar module
+----------------------------------------------------------------*/
+/* line 269, ../scss/practice.scss */
 .module {
   position: relative;
   overflow: hidden;
@@ -308,7 +331,7 @@ img, iframe {
   font-size: .9rem;
 }
 
-/* line 253, ../sass/practice.scss */
+/* line 275, ../scss/practice.scss */
 ul.top-module-ul > li {
   margin: 1px 7px 1px 0px;
   padding: 10px 0 8px 12px;
@@ -319,12 +342,12 @@ ul.top-module-ul > li {
   font-weight: bold;
 }
 
-/* line 263, ../sass/practice.scss */
+/* line 285, ../scss/practice.scss */
 ul.top-module-ul > li:hover {
   background: #f9f9f9;
 }
 
-/* line 266, ../sass/practice.scss */
+/* line 288, ../scss/practice.scss */
 .top-module-list-home {
   margin: 1px 7px 0px 0;
   padding: 5px 0 3px 12px;
@@ -333,7 +356,7 @@ ul.top-module-ul > li:hover {
   font-weight: bold;
 }
 
-/* line 274, ../sass/practice.scss */
+/* line 296, ../scss/practice.scss */
 .top-module-list {
   margin: 1px 7px 1px 0;
   padding: 5px 0 3px 12px;
@@ -345,20 +368,20 @@ ul.top-module-ul > li:hover {
   font-size: .9rem;
 }
 
-/* line 284, ../sass/practice.scss */
+/* line 306, ../scss/practice.scss */
 .top-module-list a:link {
   color: #36414d;
   font-weight: bold;
   font-size: .9rem;
 }
 
-/* line 290, ../sass/practice.scss */
+/* line 312, ../scss/practice.scss */
 .top-module-list a:visited {
   color: #36414d;
   font-weight: bold;
 }
 
-/* line 294, ../sass/practice.scss */
+/* line 316, ../scss/practice.scss */
 .top-module-list-hover {
   margin: 1px 7px 1px 0;
   padding: 5px 0 3px 12px;
@@ -369,7 +392,7 @@ ul.top-module-ul > li:hover {
   font-weight: bold;
 }
 
-/* line 303, ../sass/practice.scss */
+/* line 325, ../scss/practice.scss */
 .top-module-list-furu {
   font-size: .9rem;
   margin: 1px 7px 2px 0;
@@ -381,7 +404,7 @@ ul.top-module-ul > li:hover {
   font-weight: bold;
 }
 
-/* line 313, ../sass/practice.scss */
+/* line 335, ../scss/practice.scss */
 .top-module-list-w {
   margin: 1px 7px 1px 0;
   padding: 5px 0 3px 12px;
@@ -391,69 +414,40 @@ ul.top-module-ul > li:hover {
   color: #8f8f8f;
 }
 
-/* line 321, ../sass/practice.scss */
+/* line 343, ../scss/practice.scss */
 .top-module-list-home a:link, .top-module-list-home a:visited {
   color: #36414d;
   font-weight: bold;
 }
 
-/* line 325, ../sass/practice.scss */
+/* line 347, ../scss/practice.scss */
 .top-module-list a:link {
   color: #36414d;
   font-weight: bold;
 }
 
-/* line 331, ../sass/practice.scss */
+/* line 353, ../scss/practice.scss */
 .top-module-list a:visited {
   color: #36414d;
   font-weight: bold;
 }
 
-/* line 335, ../sass/practice.scss */
+/* line 357, ../scss/practice.scss */
 .top-module-list-w a:link {
   color: #183390;
   font-weight: bold;
 }
 
-/* line 339, ../sass/practice.scss */
+/* line 361, ../scss/practice.scss */
 .top-module-list-w a:visited {
   color: #183390;
   font-weight: bold;
 }
 
-/*////////// イメージナビ //////////*/
-/* line 344, ../sass/practice.scss */
-#navImage {
-  padding-top: 7px;
-  padding-left: 11px;
-}
-
-/* line 348, ../sass/practice.scss */
-#navImage_after {
-  padding-top: 12px;
-  padding-left: 11px;
-}
-
-/* line 352, ../sass/practice.scss */
-#navImage_after img, #navImage_after a:link img, #navImage_after a:visited img {
-  padding-top: 12px;
-  padding-left: 2px;
-}
-
-/* line 356, ../sass/practice.scss */
-#navImage img {
-  padding-top: 8px;
-  padding-bottom: 3px;
-}
-
-/* line 361, ../sass/practice.scss */
-#navImage .web_joshufu img {
-  padding-top: 5px;
-  padding-bottom: 9px;
-}
-
-/*//////////　Form elements　//////////*/
-/* line 367, ../sass/practice.scss */
+/*--------------------------------------------------------------
+5.4 - FOrm elements
+----------------------------------------------------------------*/
+/* line 370, ../scss/practice.scss */
 textarea {
   width: 430px;
   height: 200px;
@@ -461,7 +455,7 @@ textarea {
   background-color: #fff;
 }
 
-/* line 373, ../sass/practice.scss */
+/* line 376, ../scss/practice.scss */
 input {
   width: 169px;
   height: 22px;
@@ -470,14 +464,14 @@ input {
   background-color: #fff;
 }
 
-/* line 380, ../sass/practice.scss */
+/* line 383, ../scss/practice.scss */
 input #button {
   width: 130px;
   height: 22px;
   background-color: #ccc;
 }
 
-/* line 385, ../sass/practice.scss */
+/* line 388, ../scss/practice.scss */
 #submit, #searchsubmit {
   width: 220px;
   padding-top: 10px;
@@ -487,7 +481,7 @@ input #button {
   background-color: #999;
 }
 
-/* line 393, ../sass/practice.scss */
+/* line 396, ../scss/practice.scss */
 #searchform {
   margin-top: 15px;
   margin-left: 3px;
@@ -505,7 +499,7 @@ input #button {
   /*Opera, IE9, future-proofing*/
 }
 
-/* line 406, ../sass/practice.scss */
+/* line 409, ../scss/practice.scss */
 .button {
   width: 130px;
   background-color: #cccccc;

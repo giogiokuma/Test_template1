@@ -1,0 +1,30 @@
+/* line 8, ../scss/style001.scss */
+.promo {
+  border: 1px solid #e5e5e5;
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 280px;
+  min-height: 350px;
+  padding: 20px;
+  vertical-align: top;
+}
+
+/* line 18, ../scss/style001.scss */
+.promo--center {
+  justify-content: center;
+}
+
+/* line 22, ../scss/style001.scss */
+.promo--end {
+  justify-content: flex-end;
+}
+
+/* line 26, ../scss/style001.scss */
+.promo-title {
+  margin: 0;
+}
+
+/* line 30, ../scss/style001.scss */
+.promo-description {
+  margin-top: 8px;
+}
