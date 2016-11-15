@@ -1,121 +1,37 @@
 /* Table of Content */
 /*//////
-1 form
+
 //////*/
 /* line 16, ../scss/style001.scss */
-form {
-  max-width: 700px;
-  padding: 0 20px 20px 20px;
+body {
+  position: absolute;
+  align-content: space-between;
+  background: #fcfaff;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
-/* line 21, ../scss/style001.scss */
-input,
-label {
-  display: block;
-  width: 100%;
-}
-
-/* line 27, ../scss/style001.scss */
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
+/* line 25, ../scss/style001.scss */
+header,
+main,
+footer {
+  flex-basis: 100%;
+  padding: 10px;
 }
 
 /* line 32, ../scss/style001.scss */
-input,
-select {
-  background: #f9f9f9;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  box-shadow: inset 0 1px 1px #e1e1e1;
-  font-size: 16px;
-  padding: 8px;
+header,
+footer {
+  background: #fff;
 }
 
-/* line 42, ../scss/style001.scss */
-.select-state {
-  width: 100%;
+/* line 37, ../scss/style001.scss */
+header {
+  border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 46, ../scss/style001.scss */
-.fieldset {
-  flex-grow: 1;
-  margin-top: 20px;
-}
-
-/* line 51, ../scss/style001.scss */
-.fieldsets-group {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 56, ../scss/style001.scss */
-.fieldset-1of2 + .fieldset-1of2 {
-  margin-left: 30px;
-}
-
-/* line 60, ../scss/style001.scss */
-.fieldset-state {
-  padding-right: 15px;
-}
-
-/* line 64, ../scss/style001.scss */
-.fieldset-zip {
-  padding-left: 15px;
-}
-
-@media screen and (min-width: 600px) {
-  /* line 70, ../scss/style001.scss */
-  .fieldset-state {
-    padding-left: 30px;
-  }
-}
-/* line 76, ../scss/style001.scss */
-.signIn-container {
-  align-items: center;
-  background: #fcfaff;
-  display: flex;
-  justify-content: center;
-  min-height: 600px;
-}
-
-/* line 84, ../scss/style001.scss */
-.form-signIn {
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 4px;
-  max-width: 360px;
-  padding: 10px 30px 30px 30px;
-}
-
-/* line 92, ../scss/style001.scss */
-.btn-signIn {
-  margin-top: 24px;
-}
-
-/* line 96, ../scss/style001.scss */
-.fieldset-signIn {
-  display: flex;
-}
-
-/* line 100, ../scss/style001.scss */
-.fieldset-icon {
-  align-items: center;
-  border: 1px solid #e5e5e5;
-  border-right: 0;
-  border-radius: 8px 0 0 8px;
-  display: flex;
-  padding: 0 8px;
-}
-
-/* line 109, ../scss/style001.scss */
-.fieldset-signIn input {
-  border-radius: 0 8px 8px 0;
-}
-
-@media screen and (min-width: 420px) {
-  /* line 114, ../scss/style001.scss */
-  .fieldset-signIn {
-    min-width: 280px;
-  }
+/* line 41, ../scss/style001.scss */
+footer {
+  border-top: 1px solid #e5e5e5;
 }
